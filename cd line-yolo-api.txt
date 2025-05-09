@@ -1,0 +1,4 @@
+cd line-yolo-api
+docker build --tag line-yolo-api:latest .
+docker run -p 8000:8000 -d --name line-yolo-api line-yolo-api
+ngrok http 8000
